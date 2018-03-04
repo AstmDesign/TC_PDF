@@ -59,16 +59,70 @@ $pdf->Write(0, '', '', 0, 'L', true, 0, false, false, 0);
 // -----------------------------------------------------------------------------
 
 $tbl = <<<EOD
-<!DOCTYPE html>
-<html lang="">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Statment template</title>
-</head>
-<body>
 
+  <table cellpadding="5" cellspacing="0" border="1">
+    <tbody>
+      <tr>
+        <td style="width: 245;text-align: left; font-size: 10;">
+          <a href="http://www.naqla.org" target="_blank">www.naqla.org</a> <br>
+          P.O.Box <br>
+          Address: <br>
+          Telefax: <br>
+          Cell: <br>
+          Email: <br>
+          Commercial Register <br>
+          Tax Card <br>
+        </td>
+        <td style="width: 148;">
+          <img src="http://naqla.org/master/public/img/logo.png" width="105" height="105">
+        </td>
+        <td style="width: 245;text-align: left; font-size: 10;">
+          Date: <br>
+          OPS Code: <br>
+          Booking No: <br>
+          Due Date: <br>
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="3" style=" text-align: center; font-size: 12; font-weight: bold;">
+          INVOICE <br> #462354923
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br><br>
+
+  <table cellpadding="10" cellspacing="" border="1">
+    <tbody>
+      <tr>
+        <td style="text-align: left; color: #ffffff; background-color: #cccccc; font-weight:bold " colspan="2"> Bill To: </td>
+      </tr>
+      <tr>
+        <td style="width: 315;"> Customer Code:  </td>
+        <td style="width: 315;">  Address:  </td>
+      </tr>
+      <tr>
+        <td > Customer Name:  </td>
+        <td >  Tel:  </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+EOD;
+
+
+$pdf->writeHTML($tbl, true, false, false, false, '');
+
+
+
+
+$pdf->AddPage();
+
+
+$tbl = <<<EOD
   <table style="width: 435;" cellpadding="5" cellspacing="0" border="1">
     <tbody>
       <tr>
@@ -201,13 +255,9 @@ $tbl = <<<EOD
     </tbody>
   </table>
 
-
-</body>
-</html>
 EOD;
 
 $pdf->writeHTML($tbl, true, false, false, false, '');
-
 
 
 //Close and output PDF document
