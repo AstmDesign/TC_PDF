@@ -1,31 +1,13 @@
 <?php
-//============================================================+
-// File name   : example_048.php
-// Begin       : 2009-03-20
-// Last Update : 2013-05-14
-//
-// Description : Example 048 for TCPDF class
-//               HTML tables and table headers
-//
-// Author: Nicola Asuni
-//
-// (c) Copyright:
-//               Nicola Asuni
-//               Tecnick.com LTD
-//               www.tecnick.com
-//               info@tecnick.com
-//============================================================+
-
-/**
- * Creates an example PDF TEST document using TCPDF
- * @package com.tecnick.tcpdf
- * @abstract TCPDF - Example: HTML tables and table headers
- * @author Nicola Asuni
- * @since 2009-03-20
- */
 
 // Include the main TCPDF library (search for installation path).
-require_once('tcpdf_include.php');
+require_once('include.php');
+
+/**
+ * Page orientation (P=portrait, L=landscape).
+ */
+define ('PDF_PAGE_ORIENTATION', 'P');
+
 
 // create new PDF document
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
@@ -36,14 +18,6 @@ $pdf->SetAuthor('Naqla');
 $pdf->SetTitle('Naqla Invoices');
 $pdf->SetSubject('Naqla Invoices');
 $pdf->SetKeywords('Naqla, Invoice, Jobs');
-
-// set default header data
-// $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 001', PDF_HEADER_STRING, array(0,64,255), array(0,64,128));
-// $pdf->setFooterData(array(0,64,0), array(0,64,128));
-
-// set header and footer fonts
-$pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
-$pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
 
 // set default monospaced font
 $pdf->SetDefaultMonospacedFont(PDF_FONT_MONOSPACED);
@@ -59,11 +33,6 @@ $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
 // set image scale factor
 $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
-// set some language-dependent strings (optional)
-if (@file_exists(dirname(__FILE__).'/lang/eng.php')) {
-  require_once(dirname(__FILE__).'/lang/eng.php');
-  $pdf->setLanguageArray($l);
-}
 
 // ---------------------------------------------------------
 
