@@ -45,18 +45,126 @@ $pdf->setFontSubsetting(true);
 // helvetica or times to reduce file size.
 $pdf->SetFont('dejavusans', '', 10, '', true);
 
-// Add a page
-// This method has several options, check the source code documentation for more information.
-$pdf->AddPage();
-
 // set text shadow effect
 $pdf->setTextShadow(array('enabled'=>true, 'depth_w'=>0.2, 'depth_h'=>0.2, 'color'=>array(196,196,196), 'opacity'=>1, 'blend_mode'=>'Normal'));
 
 
-$pdf->Write(0, '', '', 0, 'L', true, 0, false, false, 0);
+// -----------------------------------------------------------------------------
+
+$pdf->Write(0, '', '', 0, 'P', true, 0, false, false, 0);
+
+// Add a page
+$pdf->AddPage();
+
+$tbl = <<<EOD
+
+  <table cellpadding="5" cellspacing="0" border="1">
+    <tbody>
+      <tr>
+        <td style="width: 168;">
+          <img src="http://naqla.org/master/public/img/logo.png" width="105" height="105">
+        </td>
+        <td style="width: 490;">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <table cellpadding="0" cellspacing="0" border="1">
+    <tbody>
+      <tr>
+        <td style="width: 300;"><table cellpadding="3" cellspacing="0" border="1">
+            <tbody>
+              <tr>
+                <td style="width: 65; height: 30; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 10 " > Import </td>
+                <td style="width: 90; height: 30; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 10 " > 689826 </td>
+                <td style="width: 145;height: 30; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 10 " colspan="2"> Med Mac </td>
+              </tr>
+              <tr>
+                <td style="width: 65; height: 22; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Date: </td>
+                <td style="width: 90; height: 22; text-align:left; color: #000000; font-size: 7"> 24 Jan 2018 </td>
+                <td style="width: 70; height: 22; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Alex Ref: </td>
+                <td style="width: 75; height: 22; text-align:center; color: #000000; font-size: 7;font-weight:bold;"> 377 </td>
+              </tr>
+              <tr>
+                <td style="width: 65;text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Shipper: </td>
+                <td style="width: 90;text-align:left; color: #000000; font-size: 7"> The Egyptain Germany </td>
+                <td style="width: 70;text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Destination: </td>
+                <td style="width: 75;text-align:center; color: #000000; font-size: 7"> الاسماعيلية</td>
+                </tr>
+              <tr>
+                <td style="width: 65; height: 22; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Arrive date: </td>
+                <td style="width: 90; height: 22; text-align:left; color: #000000; font-size: 7"> 25 Jan 2018 </td>
+                <td style="width: 70; height: 22; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Trucks from: </td>
+                <td style="width: 75; height: 22; text-align:center; color: #000000; font-size: 7"> 0 </td>
+              </tr>
+              <tr>
+                <td style="width: 65; height: 22; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Customs: </td>
+                <td style="width: 235; height: 22; text-align:left; color: #000000; font-size: 7" colspan="3">&nbsp;</td>
+              </tr>
+              <tr>
+                <td style="width: 65; height: 22; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Customer requests: </td>
+                <td style="width: 235; height: 22; text-align:left; color: #000000; font-size: 7" colspan="3">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+        <td style="width: 355;"><table cellpadding="5" cellspacing="0" border="1">
+            <tbody>
+              <tr>
+                <td style="width: 85;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="4">No. Containers</td>
+                <td style="width: 85;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " >Shipping Line</td>
+                <td style="width: 75;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " >Booking No.</td>
+                <td style="width: 55;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " >G-OUT</td>
+                <td style="width: 55;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " >G-IN</td>
+              </tr>
+              <tr>
+                <td style="width: 21;text-align:center; color: #000000; font-size: 7">3</td>
+                <td style="width: 21;text-align:center; color: #000000; font-size: 7">X</td>
+                <td style="width: 22;text-align:center; color: #000000; font-size: 7">20</td>
+                <td style="width: 21;text-align:center; color: #000000; font-size: 5">DC</td>
+                <td style="width: 85;text-align:center; color: #000000; font-size: 7">SEAGO</td>
+                <td style="width: 75;text-align:center; color: #000000; font-size: 7">574753214 - 300263802</td>
+                <td style="width: 55;text-align:center; color: #000000; font-size: 7">DKH</td>
+                <td style="width: 55;text-align:center; color: #000000; font-size: 7">DKH</td>
+              </tr>
+              <tr>
+                <td style="width: 85;  height: 27;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="4">Full Address:</td>
+                <td style="width: 270; height: 27;text-align:center; color: #000000; font-size: 7" colspan="4"></td>
+              </tr>
+              <tr>
+                <td style="width: 85; height: 22; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="4">Contact P. :</td>
+                <td style="width: 270;text-align:center; color: #000000; font-size: 7" colspan="4"></td>
+              </tr>
+              <tr>
+                <td style="width: 85; height: 22; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="4">GENST:</td>
+                <td style="width: 270;text-align:center; color: #000000; font-size: 7" colspan="4"></td>
+              </tr>
+              <tr>
+                <td style="width: 355; height: 28; text-align:center; color: #000000; font-size: 7" colspan="8"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+EOD;
+
+
+$pdf->writeHTML($tbl, true, false, false, false, '');
 
 
 // -----------------------------------------------------------------------------
+
+$pdf->Write(0, '', '', 0, 'P', true, 0, false, false, 0);
+
+// Add a page
+$pdf->AddPage();
 
 $tbl = <<<EOD
 
@@ -307,7 +415,9 @@ EOD;
 $pdf->writeHTML($tbl, true, false, false, false, '');
 
 
+// -----------------------------------------------------------------------------
 
+$pdf->Write(0, '', '', 0, 'L', true, 0, false, false, 0);
 
 $pdf->AddPage();
 
