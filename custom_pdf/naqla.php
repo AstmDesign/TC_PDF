@@ -92,12 +92,12 @@ $tbl = <<<EOD
     </tbody>
   </table>
 
-  <br><br><br>
+  <br><br>
 
   <table cellpadding="10" cellspacing="" border="1">
     <tbody>
       <tr>
-        <td style="width: 650;text-align: left; color: #ffffff; background-color: #cccccc; font-weight:bold " colspan="2"> Bill To: </td>
+        <td style="width: 650;text-align: left; color: #ffffff; background-color: #827f7f; font-weight:bold " colspan="2"> Bill To: </td>
       </tr>
       <tr>
         <td style="width: 325;"> Customer Code:  </td>
@@ -107,25 +107,24 @@ $tbl = <<<EOD
         <td > Customer Name:  </td>
         <td >  Tel:  </td>
       </tr>
-
     </tbody>
   </table>
 
-  <br><br><br>
+  <br><br>
 
   <table cellpadding="2" cellspacing="" border="1">
     <tbody>
       <tr>
-        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Job Code</td>
-        <td style="width: 45; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Ctr QTY</td>
-        <td style="width: 35; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Type</td>
-        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Container</td>
-        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Gate Out</td>
-        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Destination</td>
-        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Gate In</td>
-        <td style="width: 63; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Price</td>
-        <td style="width: 55; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Discount</td>
-        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Total</td>
+        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Job Code</td>
+        <td style="width: 45; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Ctr QTY</td>
+        <td style="width: 35; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Type</td>
+        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Container</td>
+        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Gate Out</td>
+        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Destination</td>
+        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Gate In</td>
+        <td style="width: 63; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Price</td>
+        <td style="width: 55; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Discount</td>
+        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #827f7f; font-weight:bold; font-size: 8 ">Total</td>
       </tr>
       <tr>
         <td style="height:35; text-align:center; font-size: 9 ">6961080</td>
@@ -198,6 +197,106 @@ $tbl = <<<EOD
         <td style="height:35; text-align:center; font-size: 9 ">12000000</td>
         <td style="height:35; text-align:center; font-size: 9 ">5%</td>
         <td style="height:35; text-align:center; font-size: 9 "> 1500000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table cellpadding="2" cellspacing="" border="0">
+    <tbody>
+      <tr>
+        <td style="width: 400;">
+
+          <br><br>
+
+          <table style="width: 350;" cellpadding="5" cellspacing="" border="1">
+            <tbody>
+              <tr>
+                <td style="width: 350;text-align: left; color: #ffffff; background-color: #827f7f; font-weight:bold "> Notes: </td>
+              </tr>
+              <tr>
+                <td "width: 350;">
+                  1-  Please check the order items , Quantity and rates. <br>
+                  2-  Cheques in the name of "NAQLA" <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+        <td style="width: 248;  text-align:right; font-size: 10 ">
+
+          <table cellpadding="5" cellspacing="" border="0">
+            <tbody>
+              <tr>
+                <td style="text-align:left;border-bottom:solid 1px #000000">Subtotal: 0</td>
+              </tr>
+              <tr>
+                <td style="text-align:left;border-bottom:solid 1px #000000">Tax Rate: 5%</td>
+              </tr>
+              <tr>
+                <td style="text-align:left;border-bottom:solid 1px #000000">Taxes: 0</td>
+              </tr>
+              <tr>
+                <td style="text-align:left; font-weight:bold;">TOTAL: 500</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <table cellpadding="2" cellspacing="" border="0">
+    <tbody>
+      <tr>
+        <td style="width: 325;  text-align:left; font-size: 10 ">
+
+          <table cellpadding="5" cellspacing="" border="1">
+            <tbody>
+              <tr>
+                <td style="width: 300;text-align: left; color: #ffffff; background-color: #827f7f; font-weight:bold "> Bank Details: </td>
+              </tr>
+              <tr>
+                <td "width: 300;text-align: left;border-bottom:solid 1px #000000;">
+                  Bank: <br>
+                  Branch: <br>
+                  Account Number: <br>
+                  Swift: <br>
+                </td>
+              </tr>
+              <tr>
+                <td "width: 300;text-align: left;border-bottom:solid 1px #000000;">
+                  Bank: <br>
+                  Branch: <br>
+                  Account Number: <br>
+                  Swift: <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+        <td style="width: 40;"></td>
+        <td style="width: 325;  text-align:left; font-size: 10 ">
+
+          <table cellpadding="5" cellspacing="" border="1">
+            <tbody>
+              <tr>
+                <td style="width: 270;text-align: left; color: #ffffff; background-color: #827f7f; font-weight:bold "> Add Remarks: </td>
+              </tr>
+              <tr>
+                <td "width: 270;text-align: left;direction: ltr;">
+                  1-  Please check the order items , Quantity and rates. <br>
+                  2-  Cheques in the name of "NAQLA" <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
       </tr>
     </tbody>
   </table>
@@ -219,7 +318,7 @@ $tbl = <<<EOD
       <tr>
         <td><img src="http://naqla.org/master/public/img/logo.png" width="105" height="105"></td>
         <td>&nbsp;</td>
-        <td style="width: 340; text-align: center; font-size: 12; font-weight: bold;">
+        <td style="width: 350; text-align: center; font-size: 12; font-weight: bold;">
           NAQLA For Transport Services
           <div style="font-size: 15;">نقلة لخدمات النقل</div>
         </td>
@@ -250,10 +349,10 @@ $tbl = <<<EOD
   <table style="width: 555;" cellpadding="5" cellspacing="0" border="0">
     <tbody>
       <tr>
-        <td style=" width: 100; height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #cccccc;">المرفقات</td>
-        <td style=" width: 290; height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #cccccc;">البيان</td>
-        <td style=" width: 150; height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #cccccc;">القيمة</td>
-        <td style=" width: 90;  height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #cccccc;">مسلسل</td>
+        <td style=" width: 100; height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #827f7f;">المرفقات</td>
+        <td style=" width: 290; height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #827f7f;">البيان</td>
+        <td style=" width: 150; height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #827f7f;">القيمة</td>
+        <td style=" width: 90;  height: 25;padding: 5; direction: rtl;text-align: center; font-size: 12; font-weight: bold; color: #ffffff; border: solid 1 #000000; background-color: #827f7f;">مسلسل</td>
       </tr>
 
       <tr>
