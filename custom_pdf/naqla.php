@@ -64,7 +64,7 @@ $tbl = <<<EOD
     <tbody>
       <tr>
         <td style="width: 245;text-align: left; font-size: 10;">
-          <a href="http://www.naqla.org" target="_blank">www.naqla.org</a> <br>
+          <a href="http://www.naqla.org" target="_blank" style="color:#000000;text-decoration: none;">www.naqla.org</a> <br>
           P.O.Box <br>
           Address: <br>
           Telefax: <br>
@@ -73,7 +73,7 @@ $tbl = <<<EOD
           Commercial Register <br>
           Tax Card <br>
         </td>
-        <td style="width: 148;">
+        <td style="width: 168;">
           <img src="http://naqla.org/master/public/img/logo.png" width="105" height="105">
         </td>
         <td style="width: 245;text-align: left; font-size: 10;">
@@ -97,17 +97,108 @@ $tbl = <<<EOD
   <table cellpadding="10" cellspacing="" border="1">
     <tbody>
       <tr>
-        <td style="text-align: left; color: #ffffff; background-color: #cccccc; font-weight:bold " colspan="2"> Bill To: </td>
+        <td style="width: 650;text-align: left; color: #ffffff; background-color: #cccccc; font-weight:bold " colspan="2"> Bill To: </td>
       </tr>
       <tr>
-        <td style="width: 315;"> Customer Code:  </td>
-        <td style="width: 315;">  Address:  </td>
+        <td style="width: 325;"> Customer Code:  </td>
+        <td style="width: 325;">  Address:  </td>
       </tr>
       <tr>
         <td > Customer Name:  </td>
         <td >  Tel:  </td>
       </tr>
 
+    </tbody>
+  </table>
+
+  <br><br><br>
+
+  <table cellpadding="2" cellspacing="" border="1">
+    <tbody>
+      <tr>
+        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Job Code</td>
+        <td style="width: 45; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Ctr QTY</td>
+        <td style="width: 35; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Type</td>
+        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Container</td>
+        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Gate Out</td>
+        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Destination</td>
+        <td style="width: 90; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Gate In</td>
+        <td style="width: 63; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Price</td>
+        <td style="width: 55; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Discount</td>
+        <td style="width: 60; height:35; text-align:center; color: #ffffff; background-color: #cccccc; font-weight:bold; font-size: 8 ">Total</td>
+      </tr>
+      <tr>
+        <td style="height:35; text-align:center; font-size: 9 ">6961080</td>
+        <td style="height:35; text-align:center; font-size: 9 ">90000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">توزيع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">900000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">شركة دمياط لتداول الحاويات والبضائع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">طريق الزقازيق ميت غمر</td>
+        <td style="height:35; text-align:center; font-size: 9 ">شركة دمياط لتداول الحاويات والبضائع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">99000000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">5%</td>
+        <td style="height:35; text-align:center; font-size: 9 "> 9000000</td>
+      </tr>
+      <tr>
+        <td style="height:35; text-align:center; font-size: 9 ">696108</td>
+        <td style="height:35; text-align:center; font-size: 9 ">250</td>
+        <td style="height:35; text-align:center; font-size: 9 ">صادر</td>
+        <td style="height:35; text-align:center; font-size: 9 ">250</td>
+        <td style="height:35; text-align:center; font-size: 9 ">ميناء الدخيلة</td>
+        <td style="height:35; text-align:center; font-size: 9 ">مدينة السادات</td>
+        <td style="height:35; text-align:center; font-size: 9 ">ساحة اركاس</td>
+        <td style="height:35; text-align:center; font-size: 9 ">12000000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">5%</td>
+        <td style="height:35; text-align:center; font-size: 9 "> 1500000</td>
+      </tr>
+      <tr>
+        <td style="height:35; text-align:center; font-size: 9 ">6961080</td>
+        <td style="height:35; text-align:center; font-size: 9 ">90000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">توزيع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">900000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">شركة دمياط لتداول الحاويات والبضائع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">طريق الزقازيق ميت غمر</td>
+        <td style="height:35; text-align:center; font-size: 9 ">شركة دمياط لتداول الحاويات والبضائع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">99000000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">5%</td>
+        <td style="height:35; text-align:center; font-size: 9 "> 9000000</td>
+      </tr>
+      <tr>
+        <td style="height:35; text-align:center; font-size: 9 ">696108</td>
+        <td style="height:35; text-align:center; font-size: 9 ">250</td>
+        <td style="height:35; text-align:center; font-size: 9 ">صادر</td>
+        <td style="height:35; text-align:center; font-size: 9 ">250</td>
+        <td style="height:35; text-align:center; font-size: 9 ">ميناء الدخيلة</td>
+        <td style="height:35; text-align:center; font-size: 9 ">مدينة السادات</td>
+        <td style="height:35; text-align:center; font-size: 9 ">ساحة اركاس</td>
+        <td style="height:35; text-align:center; font-size: 9 ">12000000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">5%</td>
+        <td style="height:35; text-align:center; font-size: 9 "> 1500000</td>
+      </tr>
+      <tr>
+        <td style="height:35; text-align:center; font-size: 9 ">6961080</td>
+        <td style="height:35; text-align:center; font-size: 9 ">90000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">توزيع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">900000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">شركة دمياط لتداول الحاويات والبضائع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">طريق الزقازيق ميت غمر</td>
+        <td style="height:35; text-align:center; font-size: 9 ">شركة دمياط لتداول الحاويات والبضائع</td>
+        <td style="height:35; text-align:center; font-size: 9 ">99000000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">5%</td>
+        <td style="height:35; text-align:center; font-size: 9 "> 9000000</td>
+      </tr>
+      <tr>
+        <td style="height:35; text-align:center; font-size: 9 ">696108</td>
+        <td style="height:35; text-align:center; font-size: 9 ">250</td>
+        <td style="height:35; text-align:center; font-size: 9 ">صادر</td>
+        <td style="height:35; text-align:center; font-size: 9 ">250</td>
+        <td style="height:35; text-align:center; font-size: 9 ">ميناء الدخيلة</td>
+        <td style="height:35; text-align:center; font-size: 9 ">مدينة السادات</td>
+        <td style="height:35; text-align:center; font-size: 9 ">ساحة اركاس</td>
+        <td style="height:35; text-align:center; font-size: 9 ">12000000</td>
+        <td style="height:35; text-align:center; font-size: 9 ">5%</td>
+        <td style="height:35; text-align:center; font-size: 9 "> 1500000</td>
+      </tr>
     </tbody>
   </table>
 
