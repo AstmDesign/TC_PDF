@@ -86,7 +86,7 @@ echo '<'.'?'.'xml version="1.0" encoding="UTF-8"'.'?'.'>';
 <li>No-write page regions: [<a href="example_064.php" title="PDF [new window]" target="_blank">PDF</a>]</li>
 <li>PDF/A-1b (ISO 19005-1:2005) document: [<a href="example_065.php" title="PDF [new window]" target="_blank">PDF</a>]</li>
 
-<li> <b>Naqla invoices: </b> [<a href="naqla.php" title="PDF invoices" target="_blank">PDF</a>]</li>
+<li> <b>Naqla invoices: </b> [<a href="../custom_pdf/naqla.php" title="PDF invoices" target="_blank">PDF</a>]</li>
 
 </ol>
 

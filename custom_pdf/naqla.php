@@ -58,7 +58,7 @@ $pdf->AddPage();
 
 $tbl = <<<EOD
 
-  <table cellpadding="5" cellspacing="0" border="1">
+  <table cellpadding="5" cellspacing="0" border="0">
     <tbody>
       <tr>
         <td style="width: 168;">
@@ -153,6 +153,166 @@ $tbl = <<<EOD
       </tr>
     </tbody>
   </table>
+
+  <table cellpadding="0" cellspacing="0" border="1">
+    <tbody>
+      <tr>
+        <td style="width: 300;"><table style="width: 300;" cellpadding="3" cellspacing="0" border="1">
+          	<tbody>
+          		<tr>
+          			<td style="text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="12"></td>
+          		</tr>
+          		<tr>
+          			<td style="text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="12"> Expenses </td>
+          		</tr>
+          		<tr>
+          			<td style="width: 29; height: 22; text-align:left; color: #000000; font-size: 7">3500</td>
+          			<td style="width: 15; height: 22; text-align:left; color: #000000; font-size: 7">x</td>
+          			<td style="width: 15; height: 22; text-align:left; color: #000000; font-size: 7">1</td>
+          			<td style="width: 15; height: 22; text-align:left; color: #000000; font-size: 7">&</td>
+          			<td style="width: 29; height: 22; text-align:left; color: #000000; font-size: 7">4700</td>
+          			<td style="width: 15; height: 22; text-align:left; color: #000000; font-size: 7">x</td>
+          			<td style="width: 15; height: 22; text-align:left; color: #000000; font-size: 7">1</td>
+          			<td style="width: 45; height: 22; text-align:left; color: #000000; font-size: 6" colspan="3">TRK. Tarif</td>
+          			<td style="width: 75; height: 22; text-align:left; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 ">Total TRK. Tarif</td>
+          			<td style="width: 47; height: 22; text-align:left; color: #000000; font-size: 7">EGP 8,200</td>
+          		</tr>
+          		<tr>
+          			<td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4">ايصالات توكيل</td>
+          			<td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP</td>
+          			<td style="width: 18; height: 28; text-align:left; color: #000000; font-size: 7">50</td>
+          			<td style="width: 14; height: 28; text-align:left; color: #000000; font-size: 7">x</td>
+          			<td style="width: 13; height: 28; text-align:left; color: #000000; font-size: 7">3</td>
+          			<td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Port Exp.</td>
+          			<td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP 150.00</td>
+          		</tr>
+              <tr>
+          			<td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4">ايصالات تحميل / تعتيق</td>
+          			<td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP 472.00</td>
+          			<td style="width: 18; height: 28; text-align:left; color: #000000; font-size: 7">0</td>
+          			<td style="width: 14; height: 28; text-align:left; color: #000000; font-size: 7">x</td>
+          			<td style="width: 13; height: 28; text-align:left; color: #000000; font-size: 7">3</td>
+          			<td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Line G.</td>
+          			<td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+          		</tr>
+              <tr>
+          			<td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4">ايصالات AICT</td>
+          			<td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP</td>
+          			<td style="width: 18; height: 28; text-align:left; color: #000000; font-size: 7">40</td>
+          			<td style="width: 14; height: 28; text-align:left; color: #000000; font-size: 7">x</td>
+          			<td style="width: 13; height: 28; text-align:left; color: #000000; font-size: 7">3</td>
+          			<td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Kashf</td>
+          			<td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP 120.00</td>
+          		</tr>
+              <tr>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4">ايصالات هيئة ميناء</td>
+                <td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP 776.99</td>
+                <td style="width: 45; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3"></td>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Bosla</td>
+                <td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4">ايصالات وزارة الدفاع ( كارتات طريق ) </td>
+                <td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP 800.00</td>
+                <td style="width: 45; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3"></td>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Shift</td>
+                <td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4">ايصال نوباتجية</td>
+                <td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP 112.50</td>
+                <td style="width: 18; height: 28; text-align:left; color: #000000; font-size: 7">0</td>
+          			<td style="width: 14; height: 28; text-align:left; color: #000000; font-size: 7">x</td>
+          			<td style="width: 13; height: 28; text-align:left; color: #000000; font-size: 7">0</td>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Gen-sets</td>
+                <td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+
+              <tr>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4"></td>
+                <td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP </td>
+                <td style="width: 45; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3"></td>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 "></td>
+                <td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4"></td>
+                <td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP </td>
+                <td style="width: 45; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3"></td>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 "></td>
+                <td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+
+              <tr>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 6 " colspan="4">لاتوجد عطلات</td>
+                <td style="width: 59; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3">EGP Delays</td>
+                <td style="width: 45; height: 28; text-align:left; color: #000000; font-size: 7" colspan="3"></td>
+                <td style="height: 28;text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Total Expenses</td>
+                <td style="width: 47; height: 28; text-align:left; color: #000000; font-size: 7">EGP 10,631,49</td>
+              </tr>
+          	</tbody>
+          </table>
+        </td>
+        <td style="width: 355;"><table style="width: 355;" cellpadding="3" cellspacing="0" border="1">
+            <tbody>
+              <tr>
+                <td style="text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="3"></td>
+              </tr>
+              <tr>
+                <td style="text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 " colspan="3">Revenues</td>
+              </tr>
+
+              <tr>
+                <td style="width: 165; height: 27; text-align:right; color: #000000; font-size: 7"> 4400 X 1 <br>  5700 X 1  </td>
+                <td style="width: 90; height: 27; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Total rate</td>
+                <td style="width: 100; height: 27; text-align:left; color: #000000; font-size: 7">EGP 10,100.00</td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"></td>
+                <td style="width: 90;  height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Delays</td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"></td>
+                <td style="width: 90; height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Official receipts</td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7">EGP 2,161.49</td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"></td>
+                <td style="width: 90; height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Bosla</td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"></td>
+                <td style="width: 90; height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Shift</td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"> 0  x 0</td>
+                <td style="width: 90; height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Gen-sets</td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"></td>
+                <td style="width: 90; height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 "></td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7"></td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"></td>
+                <td style="width: 90; height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 "></td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7">EGP</td>
+              </tr>
+              <tr>
+                <td style="width: 165; height: 28; text-align:right; color: #000000; font-size: 7"></td>
+                <td style="width: 90; height: 28; text-align:center; color: #000000; background-color: #cccccc; font-weight:bold; font-size: 7 ">Total Revenues</td>
+                <td style="width: 100; height: 28; text-align:left; color: #000000; font-size: 7">EGP 12,261.49</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 EOD;
 
 
@@ -168,7 +328,7 @@ $pdf->AddPage();
 
 $tbl = <<<EOD
 
-  <table cellpadding="5" cellspacing="0" border="1">
+  <table cellpadding="5" cellspacing="0" border="0">
     <tbody>
       <tr>
         <td style="width: 245;text-align: left; font-size: 10;">
@@ -423,7 +583,7 @@ $pdf->AddPage();
 
 
 $tbl = <<<EOD
-  <table style="width: 435;" cellpadding="5" cellspacing="0" border="1">
+  <table style="width: 435;" cellpadding="5" cellspacing="0" border="0">
     <tbody>
       <tr>
         <td><img src="http://naqla.org/master/public/img/logo.png" width="105" height="105"></td>
@@ -441,7 +601,7 @@ $tbl = <<<EOD
 
   <br><br><br>
 
-  <table cellpadding="5" cellspacing="0" border="1">
+  <table cellpadding="5" cellspacing="0" border="0">
     <tbody>
       <tr>
         <td style="height: 20;padding: 0; direction: rtl; font-size: 10; font-weight: bold; text-align: right;" colspan="3">التاريخ : ٢٨ / ٢ / ٢٠١٨</td>
@@ -536,7 +696,7 @@ $tbl = <<<EOD
 
   <br><br><br>
 
-  <table cellpadding="5" cellspacing="0" border="1">
+  <table cellpadding="5" cellspacing="0" border="0">
     <tbody>
       <tr>
         <td style="width:126;padding: 0; direction: rtl;font-size: 10; font-weight: bold; text-align: center;">يعتمد </td>
